@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+  width: 100%;
+  float: left;
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    width: 100%;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g";
+  }
+}
+
+#overskrift {
+  grid-area: a;
+}
+
+.billede1 {
+  grid-area: c;
+}
+
+.tekst1 {
+  grid-area: d;
+}
+.billede2 {
+  grid-area: e;
+}
+.tekst2 {
+  grid-area: f;
+}
